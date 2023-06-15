@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/8797b4aa7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <title>Student Report App</title>
+  </head>
+  <body dir="rtl">
+    <header>
+      <h1 id="student-name"></h1>
+      <button class="save-button">Save</button>
+    </header>
+    <div class="wrapper">
+      <table
+        border="1"
+        class="interview-table"
+        id="interview-table"
+        data-name="interviewTable"
+      >
+        <tr>
+          <th>المقابلة الأولى</th>
+        </tr>
+      </table>
+      <button class="add-row-button" data-table="interview-table">
+        اضافة ملاحظة
+      </button>
+      <table border="1" class="ps1-table" id="ps1-table" data-name="ps1Table">
+        <tr>
+          <th>PS1</th>
+        </tr>
+      </table>
+      <button class="add-row-button" data-table="ps1-table">
+        اضافة ملاحظة
+      </button>
+      <table border="1" class="ps2-table" id="ps2-table" data-name="ps2Table">
+        <tr>
+          <th>PS2</th>
+        </tr>
+      </table>
+      <button class="add-row-button" data-table="ps2-table">
+        اضافة ملاحظة
+      </button>
+      <table border="1" class="ps3-table" id="ps3-table" data-name="ps3Table">
+        <tr>
+          <th>PS3</th>
+        </tr>
+      </table>
+      <button class="add-row-button" data-table="ps3-table">
+        اضافة ملاحظة
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  position: relative;
+}
+
+.save-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 1px rgb(23, 109, 194);
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: rgb(23, 109, 194);
+  border-radius: 0.25em;
+  transition: background-color 250ms ease, color 250ms ease;
+  cursor: pointer;
+}
+
+.save-button:hover,
+.save-button:active,
+.save-button:focus {
+  color: rgb(23, 109, 194);
+  background-color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+table {
+  border: 1px solid #252525;
+}
+
+table td {
+  padding: 0.75rem;
+}
+
+table td:nth-child(2) {
+  width: 5%;
+  text-align: center;
+  color: hsl(0, 75%, 50%);
+}
+
+table td:nth-child(2) > * {
+  cursor: pointer;
+}
+
+.add-row-button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 1em 1.5em;
+  background-color: hsl(110, 75%, 50%);
+  color: #252525;
+  font-weight: 700;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.add-row-button:active,
+.add-row-button:hover,
+.add-row-button:focus {
+  background-color: hsl(110, 100%, 50%);
+}
